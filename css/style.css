@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Open Sans", sans-serif;
+}
+section {
+  width: 100%;
+  height: 95vh;
+  background-image: url("../images/banner.jpg");
+}
+
+.primary-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7vw;
+  background: #524f4f;
+}
+
+.primary-nav li {
+  list-style: none;
+  color: white;
+}
+
+.nav-bar a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 2px;
+  font-size: 12px;
+}
+
+.primary-nav li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  background-color: #ffffff;
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-in-out;
+}
+.primary-nav li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.primary-nav .logo {
+  font-size: 25px;
+  text-align: center;
+  color: #ffffff;
+  background: black;
+}
+.primary-nav .logo a {
+  background: black;
+  color: red;
+  text-decoration: none;
+}
+.primary-nav .logo b {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #ffff;
+}
+.main-content {
+  margin-top: 20%;
+  margin-left: 10%;
+}
+
+.main-content ul {
+  display: inline-flex;
+}
+
+.main-content h1 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.main-content p {
+  font-size: 36px;
+  font-style: italic;
+  color: #fff;
+}
+
+.main-content ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 61px;
+  font-size: 23px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+.main-content ul li span {
+  font-size: 12px;
+  background: black;
+  margin-right: 14px;
+  margin-left: 14px;
+  text-align: center;
+  border-radius: 9px;
+  padding: 3px;
+}
+
+.remainder {
+  height: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+}
+
+.remainder h1 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.remainder p {
+  margin: 0em 13em;
+  text-align: center;
+  color: rgb(161, 150, 150);
+  padding: 25px 6px 25px 6px;
+}
+
+.remainder a {
+  text-decoration: none;
+  border: 1px solid #938282;
+  padding: 15px 40px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #938282;
+}
+
+.remainder a:hover {
+  background: #ff5518;
+  color: #fff;
+}
+
+.events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ff5518;
+  color: white;
+}
+.events h1 {
+  margin-top: 50px;
+  font-size: 32px;
+  font-weight: 600;
+}
+.events p {
+  margin: 15px 13vw;
+  text-align: center;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.list h3 {
+  color: black;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.list img {
+  width: 400px;
+  height: 450px;
+}
+
+.list .event-list {
+  margin-left: 10vw;
+}
+
+.event-list ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 10vh;
+  border-bottom: 1px solid black;
+}
+
+.event-list p {
+  margin: 0 100px 0 0px;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.date span {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 20px;
+}
+
+.info a {
+  color: white;
+  text-decoration: none;
+  background: black;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 15px;
+  text-align: center;
+  font-stretch: normal;
+  font-weight: 100;
+}
+
+.info span a {
+  color: #000;
+  background: #fff;
+  padding: 5px 2px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info p a:hover {
+  background: #fff;
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+
+.info span a:hover {
+  background: #000;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+footer {
+  height: 5vw;
+  background: #524f4f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer ul li {
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
